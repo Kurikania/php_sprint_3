@@ -8,18 +8,20 @@ class TurkeyAdapter extends Duck {
         $this->adaptee = $adaptee;
     }
 
-    public function quack() : void
+    public function quack()
     {
-        return $this->adaptee->gobble();
+        $this->adaptee->gobble();
     }
 
-    public function gobble() : void
+    public function gobble()
     {
-        return $this->adaptee->gobble();
+        $this->adaptee->gobble();
     }
 
-    public function fly() : void
+    public function fly()
     {
-        return $this->adaptee->fly();
+        for ($i=0; $i < 5; $i++) {
+            $this->adaptee->fly();
+        }
     }
 }
