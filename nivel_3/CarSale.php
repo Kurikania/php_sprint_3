@@ -1,9 +1,6 @@
 <?php 
 require_once __DIR__."/CarCouponGenerator.php";
 
-/**
- * The Context defines the interface of interest to clients.
- */
 class CarSale {
     private CarCouponGenerator $coupon;
     public function __construct(CarCouponGenerator $coupon)

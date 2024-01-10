@@ -12,10 +12,6 @@ class BmwCouponGenerator implements CarCouponGenerator
         $this->isHighSeason = $isHighSeason;
         $this->bigStock = $bigStock;
     }
-    /*
-      if(!$isHighSeason) {$discount += 5;}
-      if($bigStock) {$discount += 7;}
-    */
     public function addSeasonDiscount() : void
     {
         if (!$this->isHighSeason) $this->discount += 5;
